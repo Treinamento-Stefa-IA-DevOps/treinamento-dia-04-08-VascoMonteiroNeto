@@ -1,11 +1,11 @@
-FROM python:3.8-slim 
+FROM python:3.8-slim
 
-COPY . /app  
+COPY . /app
 
-WORKDIR /app  
+WORKDIR /app
 
-RUN pip install -u flask  
+RUN pip install -u flask
 
-ENV FLASK_APP=flask_app.py  
+ENV FLASK_APP=flask_app.py
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port:5000"]  
+CMD ["flask", "run", "--host=0.0.0.0", "--port:5000"]
